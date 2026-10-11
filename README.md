@@ -16,17 +16,17 @@ Hace falta un Claude Code con soporte de mods (probado en la 2.1.296).
 ### Desde GitHub
 
 ```sh
-claude plugin marketplace add <usuario>/<repositorio>
+claude plugin marketplace add ShadowPJ13/usage-agentbar
 claude plugin install usage-bar@my-mods
 claude plugin install agents-bar@my-mods
 ```
 
-Dentro de Claude Code también sirve `/plugin install usage-bar --marketplace <usuario>/<repositorio>`.
+Dentro de Claude Code también sirve `/plugin install usage-bar --marketplace ShadowPJ13/usage-agentbar`.
 
 ### Desde una carpeta local
 
 ```sh
-git clone <url-del-repositorio> ~/.claude/my-mods
+git clone https://github.com/ShadowPJ13/usage-agentbar.git ~/.claude/my-mods
 claude plugin marketplace add ~/.claude/my-mods
 claude plugin install usage-bar@my-mods
 claude plugin install agents-bar@my-mods
@@ -103,4 +103,4 @@ Claude Code genera en cada mod una carpeta `.claude-plugin/types/` y un `tsconfi
 
 ## Licencia
 
-Sin licencia por ahora: añade un archivo `LICENSE` antes de publicarlo si quieres que otras personas puedan reutilizarlo.
+[MIT](LICENSE).
