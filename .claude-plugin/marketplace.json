@@ -1,0 +1,18 @@
+{
+  "name": "my-mods",
+  "owner": { "name": "shin" },
+  "plugins": [
+    {
+      "name": "usage-bar",
+      "source": "./usage-bar",
+      "description": "Barra sobre el prompt con contexto y uso de 5/H y semana",
+      "version": "0.2.0"
+    },
+    {
+      "name": "agents-bar",
+      "source": "./agents-bar",
+      "description": "Barra sobre el prompt con los agentes lanzados en la sesión",
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "agents-bar",
+  "version": "0.1.0",
+  "description": "Barra sobre el prompt con los subagentes lanzados en la sesión: cuáles están activos, cuánto llevan y cuántos se han lanzado. Solo lee la lista de agentes de Claude Code: sin red y sin gasto de cuota.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "maxActive": {
+      "type": "number",
+      "title": "Agentes activos a listar",
+      "description": "Cuántos agentes activos se muestran en filas; el resto se resume como +N",
+      "default": 5
+    },
+    "showFinished": {
+      "type": "number",
+      "title": "Terminados a listar",
+      "description": "Cuántos agentes terminados recientes se muestran bajo los activos; 0 los oculta",
+      "default": 2
+    },
+    "lingerSeconds": {
+      "type": "number",
+      "title": "Segundos visible tras terminar",
+      "description": "Con todos los agentes terminados, la barra se oculta pasados estos segundos; 0 la oculta de inmediato",
+      "default": 60
+    }
+  }
+}

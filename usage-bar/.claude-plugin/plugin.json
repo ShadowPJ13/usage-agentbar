@@ -1,0 +1,26 @@
+{
+  "name": "usage-bar",
+  "version": "0.2.0",
+  "description": "Barra sobre el prompt con el contexto y el % de uso del límite de 5 horas y del semanal, y cuándo se reinician. Solo lee datos que Claude Code ya reporta: sin red y sin gasto de cuota.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "showContext": {
+      "type": "boolean",
+      "title": "Fila de contexto",
+      "description": "Muestra cuánto de la ventana de contexto está lleno",
+      "default": true
+    },
+    "warnAt": {
+      "type": "number",
+      "title": "Aviso amarillo (%)",
+      "description": "Desde este porcentaje de uso la barra se pone amarilla",
+      "default": 70
+    },
+    "critAt": {
+      "type": "number",
+      "title": "Aviso rojo (%)",
+      "description": "Desde este porcentaje de uso la barra se pone roja",
+      "default": 90
+    }
+  }
+}
